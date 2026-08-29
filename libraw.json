@@ -1,0 +1,39 @@
+{
+    "name": "libraw",
+    "description": "Camera RAW image decoder",
+    "filters":["rawdec","rfraw"],
+    "help": "This filter decodes camera RAW images (CR2, NEF, ARW, DNG, ORF, RAF, RW2, ...) using LibRaw.",
+    "support": [
+        "image"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libraw.accessor",
+    "filter_source":{
+        "rawdec" : "dec_raw.c",
+        "rfraw" : "reframe_raw.c"
+    },
+    "extension":{
+      "cr2" : "img",
+      "cr3" : "img",
+      "crw" : "img",
+      "nef" : "img",
+      "nrw" : "img",
+      "arw" : "img",
+      "srf" : "img",
+      "sr2" : "img",
+      "dng" : "img",
+      "rw2" : "img",
+      "raw" : "img",
+      "pef" : "img",
+      "orf" : "img",
+      "raf" : "img",
+      "kdc" : "img",
+      "dcr" : "img",
+      "mrw" : "img",
+      "x3f" : "img",
+      "erf" : "img",
+      "3fr" : "img",
+      "mos" : "img",
+      "iiq" : "img"
+    },
+    "licence_required":false
+}
