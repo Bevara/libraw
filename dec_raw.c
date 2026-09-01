@@ -187,7 +187,7 @@ GF_FilterRegister RAWDecoderRegister = {
 	.process = rawdec_process,
 };
 
-const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_rawdec_register(GF_FilterSession *session)
+const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE rawdec_register(GF_FilterSession *session)
 {
 	return &RAWDecoderRegister;
 }
@@ -196,5 +196,5 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_rawdec_register(GF_Filter
 #include "filter_register.h"
 __attribute__((constructor))
 void register_rawdec(void) {
-    gf_filter_auto_register("rawdec", dynCall_rawdec_register);
+    gf_filter_auto_register("rawdec", rawdec_register);
 }

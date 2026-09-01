@@ -231,7 +231,7 @@ GF_FilterRegister ReframeRawRegister = {
 	.process = rfraw_process,
 	.process_event = rfraw_process_event};
 
-const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_raw_reframe_register(GF_FilterSession *session)
+const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE raw_reframe_register(GF_FilterSession *session)
 {
 	return &ReframeRawRegister;
 }
@@ -240,5 +240,5 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_raw_reframe_register(GF_F
 #include "filter_register.h"
 __attribute__((constructor))
 void register_raw_reframe(void) {
-    gf_filter_auto_register("raw_reframe", dynCall_raw_reframe_register);
+    gf_filter_auto_register("raw_reframe", raw_reframe_register);
 }
