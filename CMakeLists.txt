@@ -10,10 +10,11 @@ SET(LIBRAW_SRC
         ${CMAKE_CURRENT_SOURCE_DIR}/dec_raw.c
 )
 
+# No libc++/libc++abi here: the C++ runtime comes from the solver, for the
+# same reason as libjxl and libheif - a second copy in the side module breaks
+# libc++'s static state across the module boundary.
 SET(LIBRAW_LIB
         ${CMAKE_CURRENT_SOURCE_DIR}/lib/libraw.a
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libc++.a
-        ${CMAKE_CURRENT_SOURCE_DIR}/lib/libc++abi.a
 )
 
 SET(LIBRAW_INC
