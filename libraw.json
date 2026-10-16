@@ -35,7 +35,6 @@
       "mos" : "img",
       "iiq" : "img"
     },
-    "licence_required":false,
     "using": ["solver_minimal_1"],
     "runtime": {
         "rawdec": {
@@ -48,5 +47,10 @@
                 }
             ]
         }
+    },
+    "patents": {
+        "status": "royalty-free",
+        "note": "camera RAW",
+        "checked": "2026-10-16"
     }
 }
