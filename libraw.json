@@ -1,6 +1,6 @@
 {
     "name": "libraw",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Camera RAW image decoder",
     "filters":["rawdec","rfraw"],
     "help": "This filter decodes camera RAW images (CR2, NEF, ARW, DNG, ORF, RAF, RW2, ...) using LibRaw.",
@@ -36,7 +36,7 @@
       "mos" : "img",
       "iiq" : "img"
     },
-    "using": ["solver_minimal_1"],
+    "using": ["solver_minimal_1", "solver_1"],
     "runtime": {
         "rawdec": {
             "outputs": [
