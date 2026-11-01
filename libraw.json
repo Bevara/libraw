@@ -36,7 +36,7 @@
       "mos" : "img",
       "iiq" : "img"
     },
-    "using": ["mm_solver_minimal_1.0.1", "mm_solver_1.0.1"],
+    "using": ["mm_solver_minimal_1.0.1", "mm_solver_1.0.1", "mm_solver_1.0.2"],
     "runtime": {
         "rawdec": {
             "outputs": [
